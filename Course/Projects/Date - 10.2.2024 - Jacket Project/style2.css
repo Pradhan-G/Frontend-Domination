@@ -85,23 +85,33 @@ nav {
   align-items: end;
 }
 
+.ri-arrow-right-up-line {
+  font-weight: 900;
+  font-size: 25px;
+}
+
 .hero-btm-sct-2-h3-container {
   border-top: 2px solid black;
-}
-
-.hero-btm-sct-2-h3 {
-  font-weight: 200;
-}
-
-#hero-btm-sct-2-fb1 {
   display: flex;
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
 }
 
-#hero-btm-sct-2-fb1 h3 {
+.hero-btm-sct-2-h3-container i {
+  visibility: hidden;
+}
+
+.hero-btm-sct-2-h3-container h3 {
+  cursor: pointer;
+}
+
+.hero-btm-sct-2-h3-container:hover h3 {
   text-decoration: underline;
+}
+
+.hero-btm-sct-2-h3-container:hover i {
+  visibility: visible;
 }
 
 #hbst-container {
