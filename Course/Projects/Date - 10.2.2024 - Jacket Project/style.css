@@ -19,6 +19,7 @@ main {
 }
 
 nav {
+  /* background-color: crimson; */
   height: 10%;
   width: 100%;
   display: flex;
@@ -52,10 +53,12 @@ nav div {
 
 #hero-text {
   font-size: 100px;
+  /* background-color: #4d4d4d; */
   height: 20%;
 }
 #hero-next-half {
   height: 15%;
+  /* background-color: #88ffc3; */
   width: 100%;
   margin-top: 125px;
   display: flex;
@@ -66,6 +69,7 @@ nav div {
 #part1 {
   letter-spacing: 1px;
   line-height: 30px;
+  /* background-color: #3dfcff; */
 }
 
 #part1 h3 {
@@ -77,6 +81,7 @@ nav div {
   width: 30vh;
   line-height: 50px;
   position: relative;
+  /* background-color: #09687d; */
 }
 
 #part2 h3 {
@@ -88,7 +93,7 @@ nav div {
 #image-here {
   width: 100%;
   height: 43%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #image-here img {

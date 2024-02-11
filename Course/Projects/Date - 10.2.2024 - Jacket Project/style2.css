@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* The Main Page */
+
+main {
+  height: 100%;
+  width: 100%;
+  padding-left: 5vw;
+  padding-right: 2vw;
+}
+
+/* The Navbar */
+
+.fa-cart-shopping {
+  color: #fff;
+  background-color: black;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+nav {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* background-color: crimson; */
+  gap: 2vw;
+  padding-right: 1vw;
+}
+
+/* Hero Top Part  */
+
+#hero-top {
+  /* background-color: pink; */
+  height: 25%;
+  font-size: 2.2vw;
+}
+
+#hero-top h1 {
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Hero Bottom Part */
+
+#hero-bottom {
+  /* background-color: aqua; */
+  height: 24%;
+  width: 100%;
+  display: flex;
+}
+
+#hero-bottom-section-1 {
+  /* background-color: #7494ff; */
+  height: 100%;
+  width: 50%;
+  padding-top: 4%;
+}
+
+#hero-bottom-section-1 h3 {
+  font-weight: 200;
+  font-size: 1.1vw;
+}
+
+#hero-bottom-section-2 {
+  /* background-color: #3b68ff; */
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+}
+
+.hero-btm-sct-2-h3-container {
+  border-top: 2px solid black;
+}
+
+.hero-btm-sct-2-h3 {
+  font-weight: 200;
+}
+
+#hero-btm-sct-2-fb1 {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#hero-btm-sct-2-fb1 h3 {
+  text-decoration: underline;
+}
+
+#hbst-container {
+  height: 50%;
+  width: 30%;
+  /* background-color: wheat; */
+  line-height: 35px;
+}
+
+/* The Image */
+
+#hero-image {
+  width: 100%;
+  height: 40%;
+  /* background-color: red; */
+}
+
+#hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px -300px;
+}
