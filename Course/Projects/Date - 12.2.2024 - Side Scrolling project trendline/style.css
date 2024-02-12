@@ -141,6 +141,14 @@ body {
   /* background-color: teal; */
 }
 
+#content-part2::-webkit-scrollbar {
+  background-color: transparent;
+  height: 10px;
+}
+#content-part2::-webkit-scrollbar-thumb {
+  background-color: orangered;
+}
+
 img {
   flex-shrink: 0;
   height: 100%;
