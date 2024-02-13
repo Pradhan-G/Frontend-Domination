@@ -150,7 +150,6 @@ body {
   #left-topright {
     /* background-color: pink; */
     display: grid;
-    font-size: 1vw;
     padding-right: 1vw;
   }
 
@@ -171,7 +170,7 @@ body {
   #left-center {
     /* background-color: rgb(58, 186, 228); */
     padding-top: 3vh;
-    font-size: 7.8vw;
+    font-size: 7vw;
     justify-content: center;
     align-content: flex-start;
     line-height: 0.9;

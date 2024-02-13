@@ -93,15 +93,6 @@ img {
   object-fit: cover;
 }
 
-/* #Bag {
-  background-color: black;
-  width: 10vh;
-  color: white;
-  height: 10vh;
-  border-radius: 50%;
-  text-align: center;
-} */
-
 h4 {
   width: fit-content;
   font-size: 1.5vw;
@@ -110,4 +101,92 @@ h4 {
   position: absolute;
   bottom: 2vh;
   left: -1vw;
+}
+
+@media (max-width: 600px) {
+  main {
+    /* background-color: teal; */
+    /* height: 0vh; */
+    width: 90vw;
+    padding-top: 0;
+    flex-direction: column;
+  }
+  #left {
+    /* background-color: rgb(60, 60, 128); */
+    /* height: 100%; */
+    padding-top: 10vh;
+    width: 100%;
+    padding-bottom: 0px;
+  }
+
+  #left h1 {
+    font-size: 16vw;
+  }
+
+  #color-palette {
+    margin-top: 3vh; /* -------------------------------- 3vh*/
+    padding: 10px; /*----------------------------- 20px */
+  }
+
+  #bottom-text {
+    margin-top: 3vh; /*-------------------------------- 3vh*/
+    font-size: 2.5vw;
+  }
+
+  #bottom-text h2 {
+    font-size: 4vw;
+    font-weight: 600;
+    margin-bottom: 1vh; /*-------------------------- 1vh*/
+  }
+
+  #color1 {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: burlywood;
+  }
+  #color2 {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: rgb(71, 71, 71);
+  }
+
+  #right {
+    /* background-color: rgb(24, 24, 69); */
+    /* height: 100%; */
+    height: 40vh; /* -------------------------------- 40vh*/
+    width: 90vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    padding: 0 2vw;
+    padding-top: 2vh;
+    position: relative;
+  }
+
+  #right-top {
+    position: absolute;
+    bottom: -4.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3vw;
+    margin-bottom: 2vh;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h4 {
+    width: fit-content;
+    font-size: 1.5vw;
+    transform-origin: 0 0;
+    rotate: -90deg;
+    position: absolute;
+    bottom: 2vh;
+    left: -1vw;
+  }
 }
