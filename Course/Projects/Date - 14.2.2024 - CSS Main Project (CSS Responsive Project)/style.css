@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8;
+  position: relative;
+  padding-top: 0.1px;
+}
+
+#nav {
+  height: 8vh;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* gap: 19vw; */
+  width: 100%;
+  /* background-color: crimson; */
+  margin-top: 6vh;
+}
+
+#nav h2 {
+  /* background-color: red; */
+  height: 100%;
+  width: 32%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-right: 2px solid black;
+  font-size: 2vw;
+  letter-spacing: -0.05vw;
+  padding-left: 8vw;
+  font-family: monument;
+}
+
+#nav h3 {
+  /* background-color: red; */
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid black;
+  font-size: 1.1vw;
+  font-weight: 600;
+}
+
+#nav h3:nth-last-child(1) {
+  justify-content: flex-start;
+  width: 8%;
+  padding-left: 3vw;
+}
+
+#center {
+  /* background: red; */
+  height: calc(100% - 14vh);
+  padding: 3vh 5vw;
+  position: relative;
+}
+
+#content {
+  /* background-color: crimson; */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#content video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#overlay {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: red; */
+  /* background-color: red; */
+  padding: 4vw;
+  padding-bottom: 1vw;
+}
+
+#over1 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: crimson; */
+  color: #fff;
+  padding: 0 2vw;
+}
+
+#over1 h1 {
+  font-family: monument;
+  font-size: 2.4vw;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+}
+
+#over1 h2 {
+  font-size: 1vw;
+  /* background-color: black; */
+  padding: 1.5vw;
+  border-radius: 50%;
+  border: 0.2vmax solid white;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+}
+
+#over2 {
+  height: 40%;
+  width: 100%;
+  /* background-color: red; */
+  border-top: 0.2vmax solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 2vw;
+}
+
+#over2 h3 {
+  font-size: 1vw;
+  font-weight: 500;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+}
+
+#over2 i {
+  font-size: 2.5vw;
+  text-shadow: 0 0 2px #000, 0 0 2px #000;
+}
