@@ -366,3 +366,29 @@ body {
   object-fit: cover;
   object-position: top;
 }
+#page4 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#centerdiv {
+  height: 90%;
+  width: 90%;
+}
+
+#centerdiv img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#centerdiv h1 {
+  font-family: monument;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 3vw;
+}
