@@ -394,7 +394,7 @@ body {
 }
 
 #page4-extended {
-  height: 80%;
+  height: 70%;
   width: 100%;
   padding: 0 10vw;
   display: flex;
@@ -472,4 +472,59 @@ body {
 
 #page4-extended .elem:nth-child(4) {
   border-bottom: 2px solid black;
+}
+
+#page5 {
+  height: 80%;
+  width: 100%;
+  padding: 0 5%;
+}
+
+#page5 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#page5-extended {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+#marquee {
+  height: 50%;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  white-space: nowrap;
+  overflow-x: scroll;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  position: absolute;
+  animation: text-animation 5s linear infinite;
+}
+
+#marquee h1 {
+  display: inline-block;
+  /* background-color: red; */
+  font-size: 2vw;
+  font-family: monument;
+  text-transform: uppercase;
+}
+
+@keyframes text-animation {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: -100%;
+  }
 }
