@@ -392,3 +392,84 @@ body {
   margin-top: 5%;
   font-size: 3vw;
 }
+
+#page4-extended {
+  height: 80%;
+  width: 100%;
+  padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.elem {
+  height: 15vh;
+  width: 100%;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.elem h1 {
+  font-size: 1.1vw;
+}
+
+.imgoutcontainer {
+  width: 90%;
+  height: 14vh;
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.imgoutcontainer:hover {
+  /* background-color: red; */
+  opacity: 1;
+  left: 2vw;
+}
+
+.imgcontainer {
+  height: 14vh;
+  width: 14vh;
+  position: absolute;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  left: 20%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* .elem .imgcontainer:hover {
+  opacity: 1;
+  left: 25%;
+} */
+
+.elem .elem-text {
+  width: 50%;
+  text-align: left;
+
+  /* background-color: red; */
+  padding-right: 10%;
+}
+
+.elem-text h1 {
+  font-size: 2vw;
+}
+.elem-text h4 {
+  font-size: 0.7vw;
+}
+
+.imgcontainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page4-extended .elem:nth-child(4) {
+  border-bottom: 2px solid black;
+}
