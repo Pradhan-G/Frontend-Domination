@@ -497,34 +497,42 @@ body {
   overflow: hidden;
 }
 
+@keyframes text-animation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+
 #marquee {
-  height: 50%;
+  /* height: 15vh; */
+  margin-top: 4vh;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
   width: 100%;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
-  white-space: nowrap;
-  overflow-x: scroll;
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  position: absolute;
-  animation: text-animation 5s linear infinite;
 }
 
 #marquee h1 {
   display: inline-block;
-  /* background-color: red; */
-  font-size: 2vw;
-  font-family: monument;
+  font-size: 3vw;
   text-transform: uppercase;
+  font-weight: 900;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-family: monument;
+  margin-right: 16px;
+  animation-name: text-animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
-@keyframes text-animation {
-  from {
-    left: 0;
-  }
-
-  to {
-    left: -100%;
-  }
+#footer {
+  width: 100%;
+  height: 100%;
 }
