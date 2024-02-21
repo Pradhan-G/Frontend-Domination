@@ -536,3 +536,131 @@ body {
   width: 100%;
   height: 100%;
 }
+
+@media (max-width: 1920px) {
+  .container img {
+    height: 100%;
+    width: 12%;
+    margin: 0 2.5vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  #nav {
+    height: 8vh;
+    margin-top: 2vh;
+  }
+
+  #nav h2 {
+    width: 100%;
+    justify-content: center;
+    border-right: 0;
+    font-size: 5vw;
+    letter-spacing: 3vw;
+    padding-left: 0;
+  }
+
+  #nav h3 {
+    display: none;
+  }
+
+  #center {
+    /* background: red; */
+    height: calc(100% - 10vh - 50%);
+    padding: 3vh 5vw;
+    position: relative;
+  }
+
+  #content {
+    /* background-color: crimson; */
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  #content video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #overlay {
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    /* background-color: red; */
+    /* background-color: red; */
+    padding: 4vw;
+    padding-bottom: 1vw;
+    background-color: rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(5px);
+  }
+
+  #over1 {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #fff;
+    padding: 0 2vw;
+  }
+
+  #over1 h1 {
+    font-family: monument;
+    font-size: 2.4vw;
+    text-shadow: 0 0 2px #000, 0 0 2px #000;
+  }
+
+  #over1 h2 {
+    font-size: 2vw;
+    /* background-color: black; */
+    padding: 1vw 1.2vw;
+    border-radius: 50%;
+    letter-spacing: 2px;
+    border: 0.2vmax solid white;
+    text-shadow: 0 0 1px #000, 0 0 2px #000;
+  }
+
+  #over2 {
+    display: none;
+  }
+
+  #scroll {
+    height: 200px;
+  }
+
+  .container {
+    padding: 0;
+    height: 50%;
+  }
+
+  .container img {
+    height: 12vmax;
+    width: 12vmax;
+    margin: 0 1.7vw;
+  }
+
+  #alphabets {
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+  }
+
+  #alphabets h5 {
+    font-size: 2vw;
+  }
+
+  .circlehover h6 {
+    font-size: 1.5vw;
+  }
+}
