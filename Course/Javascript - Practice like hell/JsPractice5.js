@@ -8,7 +8,7 @@ var mainDiv = document.querySelector("#timer");
 
 var int;
 start.addEventListener("click", () => {
-  var val = Number(input.value);
+  var val = input.value;
 
   int = setInterval(() => {
     mainDiv.innerHTML = "<h1>" + val + "</h1>";
