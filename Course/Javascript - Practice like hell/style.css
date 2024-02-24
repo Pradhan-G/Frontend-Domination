@@ -151,3 +151,76 @@ span {
   color: rgb(0, 0, 0);
   text-shadow: 2px;
 }
+
+#ques8container {
+  /* height: 80%; */
+  width: 100%;
+  padding: 0 20%;
+  background-color: #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchbar {
+  height: 5%;
+  width: 100%;
+}
+
+#search {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  outline: 2px solid orange;
+  font-size: 30px;
+  padding: 5px 20px;
+}
+
+#search:focus {
+  outline: 2px solid orangered;
+}
+
+#users {
+  margin-top: 10%;
+  /* height: 80%; */
+  width: 100%;
+  background-color: rgb(0, 44, 64);
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.user {
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(0, 170, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.userImage {
+  height: 50%;
+  width: 100%;
+  /* background-color: crimson; */
+  overflow: hidden;
+}
+
+.userImage .userimg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.userName {
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(50% - 2px);
+  width: 100%;
+}
