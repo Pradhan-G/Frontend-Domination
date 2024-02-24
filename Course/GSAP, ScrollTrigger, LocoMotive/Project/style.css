@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
   color: white;
+  overflow: hidden;
 }
 
 html,
@@ -137,4 +138,138 @@ body img {
   gap: 12px;
   zoom: 2;
   margin-bottom: 2%;
+}
+
+@media (max-width: 600px) {
+  #main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+  }
+
+  #nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+  }
+  #nav-part-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  #nav-part-1 h3 {
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 2px 5px;
+    border-radius: 50px;
+  }
+
+  #nav-part-1 i {
+    font-size: 16px;
+    font-weight: 500;
+    border: 1.5px solid black;
+    padding: 2px 5px;
+    border-radius: 50px;
+    display: none;
+  }
+
+  #nav-part-2 h2 {
+    text-transform: uppercase;
+  }
+
+  #nav button {
+    padding: 7px 12px;
+    border-radius: 50px;
+    border: 1.5px solid black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    color: black;
+  }
+
+  #nav-part-3 {
+    display: none;
+  }
+  #nav button:nth-child(2) {
+    background-color: orangered;
+    color: black;
+    border: none;
+  }
+
+  #main > h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 500;
+  }
+
+  body img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    object-position: bottom;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+  }
+
+  #img1 {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  #img2 {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  #img3 {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  .ri-chat-smile-2-fill {
+    color: orangered;
+  }
+  #footer {
+    height: 100px;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    display: none;
+  }
+  #ftr-1 > h4 {
+    text-transform: capitalize;
+  }
+  .ri-arrow-down-circle-line {
+    zoom: 4;
+  }
+
+  #ftr-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons-3 {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(248, 169, 72);
+    gap: 12px;
+    zoom: 2;
+    margin-bottom: 2%;
+  }
 }
