@@ -61,7 +61,7 @@ body {
 #page2 {
   height: 100%;
   width: fit-content;
-  background-color: #40404e;
+  background-color: #e2e2e2;
   padding-top: 5vh;
   color: #19636e;
   display: flex;
@@ -75,7 +75,7 @@ body {
 
 #page2 h1 {
   font-size: 150px;
-  color: rgb(199, 199, 199);
+  color: rgb(151, 151, 151);
   padding-left: 10vh;
 }
 

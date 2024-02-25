@@ -116,6 +116,13 @@ tl3.from(".anim2", {
   stagger: 0.05,
 });
 
+tl2.from(".anim2", {
+  color: "black",
+  stagger: 0.05,
+  yoyo: true,
+  repeat: -1,
+});
+
 tl3.to("#page2 #AllPhotos", {
   opacity: 1,
   stagger: 0.05,
