@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "sheryjs": "^1.0.0-beta.0.1.7"
+  }
+}
