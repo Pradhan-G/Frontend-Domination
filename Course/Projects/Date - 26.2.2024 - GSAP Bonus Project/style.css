@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  background-color: #b51515;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(244, 255, 176);
+}
+
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #95ab00;
+  padding: 5vw;
+}
+
+#page2 h1 {
+  color: #3f4901;
+  font-size: 4vw;
+  text-align: center;
+  font-family: "PP Woodland";
+}
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #95ab00;
+}
