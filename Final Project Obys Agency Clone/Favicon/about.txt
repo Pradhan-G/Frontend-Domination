@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Lisu Bosa
+- Font Author: Copyright (c) 1998-2019 David Morse (original regular), Copyright (c) 2019-2023 SIL International (revised regular, bold, italic, bold italic), Copyright (c) 2014-2019 Adobe (http://www.adobe.com/) (Latin glyphs)
+- Font Source: http://fonts.gstatic.com/s/lisubosa/v2/3XFtErkv240fsdmJRJQXE2bGRdbY1P1Sbg.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
