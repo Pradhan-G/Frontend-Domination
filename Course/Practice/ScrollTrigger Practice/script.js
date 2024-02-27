@@ -63,8 +63,10 @@ var tl4 = gsap.timeline({
     end: "top -500%",
     scrub: 2,
     pin: true,
+    markers: true,
   },
 });
+
 tl.from("#page1 h1:nth-child(1)", {
   x: -400,
   opacity: 0,
@@ -137,10 +139,17 @@ tl2.from(".anim2", {
 tl3.to("#page2 #AllPhotos", {
   opacity: 1,
   stagger: 0.05,
+  transform: "translateX(0%)",
 });
 
 tl4.to("#page2 #AllPhotos", {
-  transform: "translateX(-86%)",
+  transform: "translateX(-72%)",
+});
+
+tl4.to("#scroll-next", {
+  scale: 2,
+  display: "absolute",
+  rotate: 90,
 });
 
 // tl.to("#page2 #AllPhotos", {

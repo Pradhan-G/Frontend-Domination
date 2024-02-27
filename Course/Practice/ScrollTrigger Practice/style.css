@@ -85,7 +85,7 @@ body {
 
 #page2 #AllPhotos {
   opacity: 0;
-  transform: translateX(0);
+  transform: translateX(10%);
   margin-top: 4vh;
   display: flex;
   padding: 2vh 2vw;
