@@ -38,7 +38,7 @@ Shery.makeMagnet("#page1 h1" /* Element to target.*/, {
   duration: 1,
 });
 
-Shery.makeMagnet("#page2 #AllPhotos .photo img" /* Element to target.*/, {
+Shery.makeMagnet("#page2 #AllPhotos .photo #sm" /* Element to target.*/, {
   //Parameters are optional.
   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
   duration: 1,
@@ -147,9 +147,11 @@ tl4.to("#page2 #AllPhotos", {
 });
 
 tl4.to("#scroll-next", {
+  width: "100vh",
   scale: 2,
-  display: "absolute",
-  rotate: 90,
+  y: -140,
+  // position: "absolute",
+  x: -550,
 });
 
 // tl.to("#page2 #AllPhotos", {
