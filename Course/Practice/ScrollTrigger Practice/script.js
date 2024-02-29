@@ -1,3 +1,5 @@
+// const { default: Shery } = require("sheryjs");
+
 const lenis = new Lenis();
 
 lenis.on("scroll", (e) => {});
@@ -38,10 +40,47 @@ Shery.makeMagnet("#page1 h1" /* Element to target.*/, {
   duration: 1,
 });
 
-Shery.makeMagnet("#page2 #AllPhotos .photo #sm" /* Element to target.*/, {
-  //Parameters are optional.
-  ease: "cubic-bezier(0.23, 1, 0.320, 1)",
-  duration: 1,
+// Shery.makeMagnet("#page2 #AllPhotos .photo #sm" /* Element to target.*/, {
+//   //Parameters are optional.
+//   ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+//   duration: 1,
+// });
+
+Shery.imageEffect(".photo", {
+  style: 2,
+  // debug: true,
+  gooey: true,
+  config: {
+    a: { value: 2, range: [0, 30] },
+    b: { value: -0.95, range: [-1, 1] },
+    zindex: { value: -9996999, range: [-9999999, 9999999] },
+    aspect: { value: 0.7272643924436347 },
+    ignoreShapeAspect: { value: true },
+    shapePosition: { value: { x: 0, y: 0 } },
+    shapeScale: { value: { x: 0.5, y: 0.5 } },
+    shapeEdgeSoftness: { value: 0, range: [0, 0.5] },
+    shapeRadius: { value: 0.08, range: [0, 2] },
+    currentScroll: { value: 0 },
+    scrollLerp: { value: 0.07 },
+    gooey: { value: true },
+    infiniteGooey: { value: false },
+    growSize: { value: 4.1, range: [1, 15] },
+    durationOut: { value: 0.92, range: [0.1, 5] },
+    durationIn: { value: 0.1, range: [0.1, 5] },
+    displaceAmount: { value: 0.5 },
+    masker: { value: false },
+    maskVal: { value: 1, range: [1, 5] },
+    scrollType: { value: 0 },
+    geoVertex: { range: [1, 64], value: 1 },
+    noEffectGooey: { value: true },
+    onMouse: { value: 1 },
+    noise_speed: { value: 0.92, range: [0, 10] },
+    metaball: { value: 0.34, range: [0, 2] },
+    discard_threshold: { value: 0.59, range: [0, 1] },
+    antialias_threshold: { value: 0.03, range: [0, 0.1] },
+    noise_height: { value: 0.31, range: [0, 2] },
+    noise_scale: { value: 21.37, range: [0, 100] },
+  },
 });
 
 var tl = gsap.timeline();

@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Kode Mono", monospace;
-  cursor: none;
+  /* cursor: none; */
 }
 
 html,
@@ -95,14 +95,17 @@ body {
 }
 
 #page2 #AllPhotos .photo {
-  height: 100%;
-  width: 630px;
+  height: 33vw;
+  width: 24vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 #page2 #AllPhotos .photo img {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 10px 15px 10px 0 rgba(0, 0, 0, 0.3);
 }
 /* 
@@ -121,3 +124,7 @@ body {
   width: 100%;
   background-color: #d56062;
 } */
+
+._canvas_container {
+  z-index: 999999999 !important;
+}
