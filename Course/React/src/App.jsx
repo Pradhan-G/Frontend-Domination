@@ -48,30 +48,29 @@ const App = () => {
       {/* Using Tailwind Css to create Cards */}
 
       <div className="h-screen w-screen bg-slate-600 p-4 flex flex-wrap justify-center items-center gap-5">
-        {Data.map((e) => {
+        {Data.map((e, index) => {
           return (
-            <>
-              <div className="card h-96 w-80 bg-slate-900 rounded-xl flex flex-col overflow-hidden">
-                <div className="card-image h-52 bg-cyan-700 overflow-hidden">
-                  <img
-                    className="object-cover object-center h-full w-full"
-                    src={e.image}
-                    alt=""
-                  />
-                </div>
-                <div className="card-name text-white text-4xl mt-5 pl-3">
-                  <h1>{e.name}</h1>
-                </div>
-                <div className="card-other-details text-white mt-5">
-                  <h2 className="text-lg text-slate-400 pl-4">
-                    Age : {e.age}{" "}
-                  </h2>
-                  <h2 className="text-lg text-slate-400 mt-2 pl-4">
-                    Car : {e.car}
-                  </h2>
-                </div>
+            <div
+              className="card h-96 w-80 bg-slate-900 rounded-xl flex flex-col overflow-hidden"
+              key={index}
+            >
+              <div className="card-image h-52 bg-cyan-700 overflow-hidden">
+                <img
+                  className="object-cover object-center h-full w-full"
+                  src={e.image}
+                  alt=""
+                />
               </div>
-            </>
+              <div className="card-name text-white text-4xl mt-5 pl-3">
+                <h1>{e.name}</h1>
+              </div>
+              <div className="card-other-details text-white mt-5">
+                <h2 className="text-lg text-slate-400 pl-4">Age : {e.age} </h2>
+                <h2 className="text-lg text-slate-400 mt-2 pl-4">
+                  Car : {e.car}
+                </h2>
+              </div>
+            </div>
           );
         })}
       </div>
