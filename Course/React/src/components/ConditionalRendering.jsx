@@ -22,6 +22,7 @@ function ConditionalRendering() {
             className="h-10 w-40 text-white mt-3 bg-blue-700 rounded-xl "
           >
             {" "}
+            {/* This is how we perform operations by using onClick onMouseOver inside the tag itself in the button */}{" "}
             Increase Counter{" "}
           </button>
         </div>
