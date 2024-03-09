@@ -14,7 +14,40 @@ function StateWithObjectsAndArrays() {
     <>
       <div className="p-10 bg-slate-900 h-screen w-full">
         <h1 className="text-lime-900 text-4xl mb-4">State With Arrays</h1>
-        <div className="flex gap-5">
+        <div className="flex gap-10">
+          <div>
+            <h1 className="text-orange-200 text-3xl">
+              Changing the value of <br /> Data in objects <br /> which is
+              inside an <br /> array.
+            </h1>
+            {obj.map((el, index) => {
+              return (
+                <div className="border-4 mb-4 flex gap-6 flex-auto   ">
+                  <h1 key={index} className="text-amber-200 text-4xl">
+                    Name : {el.name} <br />
+                    Age : {el.age} <br />
+                    Is Banned : {el.isBanned.toString()} <br /> <br />
+                  </h1>
+                  <button
+                    className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-900"
+                    onClick={() => {
+                      setObj([
+                        ...obj.slice(0, index),
+                        {
+                          ...obj[index],
+                          isBanned: !obj[index].isBanned,
+                        },
+                        ...obj.slice(index + 1),
+                      ]);
+                    }}
+                  >
+                    Change
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+
           <div>
             <h1 className="text-orange-200 text-3xl">
               Delete the last <br /> element of the array
