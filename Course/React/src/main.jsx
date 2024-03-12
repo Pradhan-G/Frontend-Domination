@@ -6,6 +6,7 @@ import ConditionalRendering from "./components/ConditionalRendering.jsx";
 import UnderstandingState from "./components/UnderstandingState.jsx";
 import StateWithObjectsAndArrays from "./components/StateWithObjectsAndArrays.jsx";
 import ChangingPhotos from "./components/ChangingPhotos.jsx";
+import PassingData from "./components/PassingData.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -14,5 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <UnderstandingState /> */}
     {/* <StateWithObjectsAndArrays /> */}
     <ChangingPhotos />
+    <PassingData color={"bg-blue-600"} text={"Click Me"} />
+    <PassingData color={"bg-red-600"} text={"Dabao"} />
   </React.StrictMode>
 );
