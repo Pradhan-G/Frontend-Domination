@@ -9,8 +9,18 @@ function PassingData({ color, text }) {
     },
     {
       name: "Harshit",
-      profession: "Web Developer",
+      profession: "Lighting Artist",
       img: "https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Sahil",
+      profession: "Web Designer",
+      img: "https://plus.unsplash.com/premium_photo-1710294627170-e063a544a7e6?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+      name: "Aman",
+      profession: "Visual Artist",
+      img: "https://plus.unsplash.com/premium_photo-1709865803539-69809922ac45?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
   ];
   return (
