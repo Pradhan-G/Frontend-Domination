@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "./Card";
 
 function PassingData({ color, text }) {
   const data = [
@@ -32,6 +33,19 @@ function PassingData({ color, text }) {
       <button className={`rounded-md px-1 py-2 ${color} text-white`}>
         {text}
       </button>
+      <div className="flex gap-10">
+        {data.map((e, index) => {
+          return (
+            <Card
+              key={index}
+              name={e.name}
+              profession={e.profession}
+              img={e.img}
+              isFriend={e.isFriend}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

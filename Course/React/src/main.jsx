@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <StateWithObjectsAndArrays /> */}
     {/* <ChangingPhotos /> */}
     {/* <PassingData color={"bg-blue-600"} text={"Click Me"} /> */}
-    {/* <PassingData color={"bg-red-600"} text={"Dabao"} /> */}
-    <Card />
+    <PassingData color={"bg-red-600"} text={"Dabao"} />
+    {/* <Card /> */}
   </React.StrictMode>
 );
