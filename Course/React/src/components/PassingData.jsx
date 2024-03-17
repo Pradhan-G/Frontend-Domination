@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "./Card";
 
 function PassingData({ color, text }) {
@@ -28,20 +28,36 @@ function PassingData({ color, text }) {
       isFriend: true,
     },
   ];
+  const [realData, setRealData] = useState(data);
+
+  function handleClick(ind) {
+    setRealData((prev) => {
+      return prev.map((e, index) => {
+        if (index === ind) {
+          return { ...e, isFriend: !e.isFriend };
+        } else {
+          return e;
+        }
+      });
+    });
+  }
+
   return (
     <div>
       <button className={`rounded-md px-1 py-2 ${color} text-white`}>
         {text}
       </button>
       <div className="flex gap-10">
-        {data.map((e, index) => {
+        {realData.map((e, index) => {
           return (
             <Card
               key={index}
               name={e.name}
               profession={e.profession}
               img={e.img}
-              isFriend={e.isFriend}
+              friend={e.isFriend}
+              handleClick={handleClick}
+              ind={index}
             />
           );
         })}
