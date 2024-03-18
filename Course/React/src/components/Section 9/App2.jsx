@@ -3,7 +3,7 @@ import Card from "./Card";
 import Navbar from "./Navbar";
 
 function App2() {
-  let counter = 0;
+  let [counter, setCounter] = useState(0);
 
   const data = [
     {
@@ -50,7 +50,7 @@ function App2() {
     setRealData((prev) => {
       return prev.map((item, i) => {
         if (index === i) {
-          counter += 1;
+          item.added ? setCounter(counter - 1) : setCounter(counter + 1);
           return { ...item, added: !item.added };
         } else {
           return item;
