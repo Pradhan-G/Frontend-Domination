@@ -10,6 +10,7 @@ import ChangingPhotos from "./components/ChangingPhotos.jsx";
 import PassingData from "./components/PassingData.jsx";
 import Card from "./components/Card.jsx";
 import App2 from "./components/Section 9/App2.jsx";
+import App3 from "./components/Section 10/App3.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     {/* <PassingData color={"bg-blue-600"} text={"Click Me"} /> */}
     {/* <PassingData color={"bg-red-600"} text={"Dabao"} /> */}
     {/* <Card /> */}
-    <App2 />
+    {/* <App2 /> */}
+    <App3 />
   </React.StrictMode>
 );
