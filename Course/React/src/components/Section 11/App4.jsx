@@ -25,11 +25,23 @@ function App4() {
       },
     ]);
   }
+
+  function handleRemove(index) {
+    setVal(
+      val.filter((e, ind) => {
+        if (ind === index) {
+          return false;
+        } else {
+          return true;
+        }
+      })
+    );
+  }
   return (
     <div className="h-screen w-screen bg-green-400 flex flex-col justify-center items-center ">
       {/* <Cards name={name} profession={profession} age={age} imgUrl={imgURL} /> */}
 
-      <Cards val={val} />
+      <Cards val={val} handleRemove={handleRemove} />
 
       <Form handleInputSubmit={handleInputSubmit} />
     </div>

@@ -8,7 +8,10 @@ function Form({ handleInputSubmit }) {
       <form
         action=""
         className="mt-10"
-        onSubmit={handleSubmit((data) => handleInputSubmit(data))}
+        onSubmit={handleSubmit((data) => {
+          handleInputSubmit(data);
+          reset();
+        })}
       >
         <input
           {...register("name")}

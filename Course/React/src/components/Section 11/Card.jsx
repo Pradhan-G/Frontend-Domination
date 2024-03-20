@@ -1,6 +1,6 @@
 import React from "react";
 
-function Card({ name, profession, age, image }) {
+function Card({ name, profession, age, image, index, handleRemove }) {
   return (
     <div className="h-64 w-52 bg-lime-800 text-white rounded-lg flex flex-col items-center p-2">
       <div className="h-20 w-20 rounded-full bg-lime-200 overflow-hidden">
@@ -13,7 +13,10 @@ function Card({ name, profession, age, image }) {
       <h1 className="font-semibold tracking-tighter mt-2 text-xl text-gray-300">
         {age}
       </h1>
-      <button className="px-5 py-2 mt-2 bg-green-700 rounded-lg hover:bg-green-600 transition-colors">
+      <button
+        onClick={() => handleRemove(index)}
+        className="px-5 py-2 mt-2 bg-green-700 rounded-lg hover:bg-green-600 transition-colors"
+      >
         Remove
       </button>
     </div>
