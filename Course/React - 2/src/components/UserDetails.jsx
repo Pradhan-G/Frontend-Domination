@@ -4,7 +4,7 @@ import data from "./dummyData.json";
 const UserDetails = () => {
   const d = useParams();
   const navigate = useNavigate();
-  console.log(d);
+  //   console.log(d);
   function goBackHandler() {
     navigate(-1);
   }

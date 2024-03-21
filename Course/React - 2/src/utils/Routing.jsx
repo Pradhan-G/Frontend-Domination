@@ -11,8 +11,9 @@ const Routing = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/users" element={<Users />} />
-        <Route path="/users/:name" element={<UserDetails />} />
+        <Route path="/users" element={<Users />}>
+          <Route path="/users/:name" element={<UserDetails />} />
+        </Route>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

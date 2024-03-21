@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./dummyData.json";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 const Users = () => {
   //   console.log(data);
   return (
@@ -20,6 +20,10 @@ const Users = () => {
           );
         })}
       </ul>
+
+      <hr />
+
+      <Outlet />
     </div>
   );
 };
