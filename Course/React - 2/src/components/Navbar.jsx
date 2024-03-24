@@ -53,6 +53,18 @@ const Navbar = () => {
         >
           Users{" "}
         </NavLink>
+        <NavLink
+          className={(e) => {
+            return [
+              e.isActive ? "text-cyan-400" : "",
+              e.isActive ? "font-bold" : "",
+              "hover:text-slate-300",
+            ].join(" ");
+          }}
+          to={"/products"}
+        >
+          Products{" "}
+        </NavLink>
       </div>
     </div>
   );

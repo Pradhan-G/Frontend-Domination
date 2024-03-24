@@ -5,7 +5,7 @@ const ShowData = ({ val }) => {
 
   return val.map((e, i) => {
     return (
-      <div>
+      <div key={i}>
         <div className="container mx-auto p-10">
           <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
             {/* Card Image */}

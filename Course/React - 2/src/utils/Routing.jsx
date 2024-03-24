@@ -5,6 +5,7 @@ import Users from "../components/Users";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import UserDetails from "../components/UserDetails";
+import Products from "../components/Products";
 
 const Routing = () => {
   return (
@@ -16,6 +17,7 @@ const Routing = () => {
         </Route>
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </div>
   );
