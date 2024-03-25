@@ -27,11 +27,7 @@ function GetData({ bringValue }) {
     hello();
   }, []);
 
-  return (
-    <div>
-      <button className="px-4 py-2 bg-red-300 rounded-lg">Call Api</button>
-    </div>
-  );
+  return "";
 }
 
 export default GetData;

@@ -18,16 +18,7 @@ function PostData() {
       .catch((err) => console.log(err));
   };
 
-  return (
-    <div>
-      <button
-        onClick={postProducts}
-        className="px-4 py-2 bg-red-300 rounded-lg "
-      >
-        Post Api
-      </button>
-    </div>
-  );
+  return "";
 }
 
 export default PostData;
