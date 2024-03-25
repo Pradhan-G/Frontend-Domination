@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import GetData from "./GetData";
 import PostData from "./PostData";
 import ShowData from "./ShowData";

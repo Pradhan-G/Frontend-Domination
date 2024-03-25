@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import axios from "axios";
 
 function GetData({ bringValue }) {
@@ -13,22 +13,23 @@ function GetData({ bringValue }) {
     }
   };
 
+  useEffect(() => {
+    async function hello() {
+      try {
+        const data = await getProducts(); // Wait for the API call to complete
+        bringValue(data); // Pass the data to the parent component
+      } catch (error) {
+        // Handle errors if needed
+        console.error("Error getting products:", error);
+      }
+    }
+
+    hello();
+  }, []);
+
   return (
     <div>
-      <button
-        onClick={async () => {
-          try {
-            const data = await getProducts(); // Wait for the API call to complete
-            bringValue(data); // Pass the data to the parent component
-          } catch (error) {
-            // Handle errors if needed
-            console.error("Error getting products:", error);
-          }
-        }}
-        className="px-4 py-2 bg-red-300 rounded-lg"
-      >
-        Call Api
-      </button>
+      <button className="px-4 py-2 bg-red-300 rounded-lg">Call Api</button>
     </div>
   );
 }
