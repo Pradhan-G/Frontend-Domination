@@ -4,7 +4,7 @@ import User from "./User";
 const Home = () => {
   return (
     <div>
-      <User />
+      <h1>Home</h1>
     </div>
   );
 };

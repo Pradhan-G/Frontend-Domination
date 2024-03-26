@@ -4,7 +4,7 @@ import UserDetail from "./UserDetail";
 const User = () => {
   return (
     <div>
-      <UserDetail />
+      <h1>User</h1>
     </div>
   );
 };
