@@ -1,9 +1,10 @@
 import React from "react";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="text-4xl container mx-auto p-2 bg-red-100 text-center">
-      App
+    <div className="">
+      <Navbar />
     </div>
   );
 };
