@@ -13,8 +13,8 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div>
-        <button className="px-4 py-2 w-[18%] border-2 rounded-lg border-blue-400 text-blue-500">
+      <div className="bg-slate-300 h-screen w-[15%]">
+        <button className="px-4 py-2 w-[100%] border-2 rounded-lg mx-auto border-blue-400 text-blue-500">
           Add New Product
         </button>
         <div className="flex gap-2 flex-col mt-4">
@@ -23,7 +23,7 @@ const Navbar = () => {
               <Link
                 key={index}
                 to={`/category/${item}`}
-                className="px-4 py-2 w-[18%] text-center text-md"
+                className="px-4 py-2 w-[100%] mx-auto text-center text-md"
               >
                 {" "}
                 {item}{" "}
