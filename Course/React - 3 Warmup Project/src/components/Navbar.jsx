@@ -22,7 +22,7 @@ const Navbar = () => {
             return (
               <Link
                 key={index}
-                to={`/category/${item}`}
+                to={`/category/${"category" + index}`}
                 className="px-4 py-2 w-[100%] mx-auto text-center text-md"
               >
                 {" "}
