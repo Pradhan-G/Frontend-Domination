@@ -10,6 +10,8 @@ const Navbar = () => {
     "Category 5",
     "Category 6",
     "Category 7",
+    "Category 8",
+
   ];
   return (
     <>
